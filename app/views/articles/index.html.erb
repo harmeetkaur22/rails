@@ -1,4 +1,12 @@
+<h1>Articles</h1>
 
-<h1>hello , Rails !</h1>
-<h5> Date- 24/Aug/2022</h5>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+    <a href="/articles/<%= article.id %>">
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
+
 
